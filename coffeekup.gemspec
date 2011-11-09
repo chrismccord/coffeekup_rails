@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Chris McCord"]
   s.email       = ["chris@chrismccord.com"]
   s.homepage    = ""
-  s.summary     = %q{CoffeeKup preprocessor for rails assept pipeline}
-  s.description = %q{CoffeeKup preprocessor for rails assept pipeline}
+  s.summary     = %q{Asset pipeline engine/preprocessor for CoffeeKup template files}
+  s.description = %q{CoffeeKup Rails is an asset pipeline engine/preprocessor for CoffeeKup template files.}
 
   s.rubyforge_project = "coffeekup_rails"
 
