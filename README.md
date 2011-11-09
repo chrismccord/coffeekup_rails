@@ -39,4 +39,5 @@ Configuration optional (defaults are redundantly set here); however, `Coffeekup.
     Coffeekup.configure do |config|
       config.namespace = 'name_of_global_js_object'  # default 'templates'
       config.extension = 'coffeekup'                 # default 'ck'
+      config.base_directory = 'app/assets/javascripts/some_base_view_folder'  # default 'app/assets/javascripts/views'
     end
