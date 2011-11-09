@@ -10,7 +10,8 @@ module Coffeekup
 
     attr_accessor :namespace,
                   :base_directory,
-                  :extension
+                  :extension,
+                  :files
     
     # set all configuration options to their default values
     def self.extended(base)
