@@ -21,9 +21,7 @@ This happens upon every page load when your .ck files change thanks to sprockets
 ## Installation
   1. First grab [node.js](http://nodejs.org/#download) and [npm](https://github.com/isaacs/npm)
   2. `npm install coffeekup -g`
-  3. `gem 'coffeekup_rails', :git => "git://github.com/chrismccord/coffeekup_rails.git"` and `bundle`
-
-Will be pushed to rubygems soon.
+  3. `gem 'coffeekup_rails'` and `bundle`
 
 ### Initializer
 Configuration optional (defaults are redundantly set here); however, `Coffeekup.register_engine` must be included.
