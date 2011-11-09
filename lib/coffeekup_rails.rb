@@ -38,7 +38,7 @@ module Coffeekup
       :compiled_tmp => "#{Rails.root}/tmp/#{filename}".gsub(self.extension, 'js')
     }
     FileUtils.cp(source, @files[:tmp])
-    i, o, stderr = Open3.popen3("coffeekup --js -f --namespace '#{nspace}' '#{@files[:tmp]}'")
+    i, o, stderr = Open3.popen3("coffeekup --js --format --namespace '#{nspace}' '#{@files[:tmp]}'")
     errors = stderr.read
     raise CompilationError, "#{source}\n\n#{errors}" if not errors.blank?
     
