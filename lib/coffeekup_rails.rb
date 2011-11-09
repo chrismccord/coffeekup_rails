@@ -12,14 +12,21 @@ module Coffeekup
     Rails.application.assets.register_engine ".#{self.extension}", Coffeekup::Template
   end
 
-  # Execute coffeekup command, compile source, and capture errors
+
+  # Takes coffeescript coffeekup file (.js.ck) and returns compiled js template.
+  # JS templates are loaded into window.#{self.namespace} object, ie:
+  #   /app/assets/javascripts/views/shared/index.js.ck => templates['shared.index']({})
+  #
+  # Templates are searched under self.base_directory (defaults /app/assets/javascripts/views) and
+  # must be a path that the asset pipeline recognizes in order to have sprockets load the files.
+  #
   #  params:
   #    source           input file path
   #    options
   #      namespace      optional js template namespace to use instead of default
   #  
   #  returns:
-  #    contents of compiled file
+  #    contents of compiled coffeekup js template
   #
   def self.compile!(source, options = {})
     nspace = options[:namespace] || self.namespace
@@ -49,9 +56,6 @@ module Coffeekup
     end
 
     def evaluate(context, locals, &block)
-      # Takes coffeescript coffeekup file (.js.ck) and converts into compiled js
-      # templates loaded into window.templates object, IE:
-      #   /app/assets/javascripts/views/shared/index.js.ck => templates['shared.index']()
       begin
         compiled_output = Coffeekup.compile!(@file)
       ensure
