@@ -1,8 +1,8 @@
-#Coffeekup Rails
-Coffeekup Rails is an asset pipeline engine/preprocessor for [coffeekup](http://coffeekup.org/) template files.
+#CoffeeKup Rails
+CoffeeKup Rails is an asset pipeline engine/preprocessor for [coffeekup](http://coffeekup.org/) template files.
 Simply place your coffeekup templates in a configured asset directory with a .js.ck extension and they will be automatically available as precompiled js templates.
 ##Example
-Say your client side views live in `/app/assets/javascripts/views` (Coffeekup Rails default).
+Say your client side views live in `/app/assets/javascripts/views` (default).
 
 Given `/app/assets/javascripts/views/shared/hello.js.ck`:
 
