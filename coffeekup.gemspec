@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Coffeekup::VERSION
   s.authors     = ["Chris McCord"]
   s.email       = ["chris@chrismccord.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/chrismccord/coffeekup_rails"
   s.summary     = %q{Asset pipeline engine/preprocessor for CoffeeKup template files}
   s.description = %q{CoffeeKup Rails is an asset pipeline engine/preprocessor for CoffeeKup template files.}
 
