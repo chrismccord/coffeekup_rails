@@ -41,3 +41,14 @@ Configuration optional (defaults are redundantly set here); however, `Coffeekup.
       config.extension = 'coffeekup'                 # default 'ck'
       config.base_directory = 'app/assets/javascripts/some_base_view_folder'  # default 'app/assets/javascripts/views'
     end
+    
+## Contributing
+
+Once you've made your commits:
+
+1. [Fork](http://help.github.com/fork-a-repo/) coffeekup_rails
+2. Create a topic branch - git checkout -b my_branch
+3. Push to your branch - git push origin my_branch
+4. Create an [issue](https://github.com/chrismccord/coffeekup_rails/issues) with a link to your branch
+
+Report bugs or feature requests on the [issue tracker](https://github.com/chrismccord/coffeekup_rails/issues) 
